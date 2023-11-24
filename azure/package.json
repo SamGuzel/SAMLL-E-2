@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "@azure/functions": "^4.0.0",
+    "@azure/storage-blob": "^12.17.0",
+    "axios": "^1.6.2",
     "openai": "^4.20.0"
   },
   "main": "src/functions/*.js"

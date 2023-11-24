@@ -1,3 +1,5 @@
+import { NextResponse } from "next/server";
+
 export async function POST(request: Request) {
   const res = await request.json();
   const prompt = res.prompt;
@@ -10,7 +12,5 @@ export async function POST(request: Request) {
 
   const textData = await response.text();
 
-  return new Response(JSON.stringify(textData.trim()), {
-    status: 200,
-  });
+  return NextResponse.json(textData);
 }
