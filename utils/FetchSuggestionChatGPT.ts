@@ -1,5 +1,5 @@
-const fetchSuggestionFromChatGPT = () =>
-  fetch("/api/suggestion", {
+const fetchSuggestionFromChatGPT = async () =>
+  await fetch("/api/suggestion", {
     cache: "no-store",
   }).then((res) => res.json());
 

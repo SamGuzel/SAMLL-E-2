@@ -1,6 +1,7 @@
 const { app } = require("@azure/functions");
 const openai = require("../../utils/openai");
-app.http("getChatGPTFromSuggestion", {
+
+app.http("getChatGPTSuggestion", {
   methods: ["GET"],
   authLevel: "anonymous",
   handler: async (request, context) => {
