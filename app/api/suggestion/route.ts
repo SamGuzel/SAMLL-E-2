@@ -1,7 +1,6 @@
 export async function GET(request: Request) {
   const response = await fetch(
-    "http://localhost:7071/api/getChatGPTSuggestion",
-    { cache: "no-store" }
+    "http://127.0.0.1:7071/api/getChatGPTSuggestion"
   );
 
   const textData = await response.text();
